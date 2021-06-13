@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font  Awesome -->
+    <script src="https://kit.fontawesome.com/6514fba8b1.js" crossorigin="anonymous"></script>
+
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/my-store-logo.jpg" alt="logo" width="125px" height="100px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="cart.html" class="active"> Cart
+                       <img src="images/cart.png" alt="cart" width="30px" height="30px"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <h1>Give Your Style A New Look </h1>
+        </div>
+
+        <section id="cart">
+            <div class="products">
+                <h2>Shopping Cart</h2>
+                <table>
+                    <thead>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </thead>
+                    <tbody>     
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <a href="#" class="btn-remove" title="Remove" onclick="removeitem(this)"> <i class="fas fa-trash-alt"></i></a>
+                                    <img src="images/prod-4.jpg" >
+                                
+                                </div>
+                            </td>
+                            <td>
+                                <div class="title">
+                                    <h3> Mustard yellow wide leg pants </h3> 
+                                    <!-- <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> -->
+                                    <span class="icon"><i class="fas fa-heart" ></i></span>
+                                
+                                    </div>
+                            </td>
+                            <td> <span class="price" >35.00</span>DT </td>
+                            <td>
+                                <input class="num" type="number" value="1" min="1">
+                            </td>
+                            <td><span class="full-price">35.00</span>DT</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <a href="#" class="btn-remove" title="Remove" onclick="removeitem(this)"> <i class="fas fa-trash-alt"></i> </a>
+                                    <img src="images/prod-3.jpg" >
+                      
+                                </div>
+                            </td>
+                            <td>
+                                <div class="title">
+                                    <h3> Blue high heels shoes </h3>
+                                        <i class="fas fa-heart" ></i>
+                                    
+                                </div>
+                            </td>
+                            <td> <span class="price">47.50</span> DT </td>
+                            <td>
+                                <input class="num" type="number" value="1" min="1">
+                            </td>
+                            <td><span class="full-price"> 47.50</span> DT</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <a href="#" class="btn-remove" title="Remove" onclick="removeitem(this)"> <i class="fas fa-trash-alt"></i> </a>
+                                    <img src="images/prod-2.jpg" >
+                      
+                                </div>
+                            </td>
+                            <td>
+                                <div class="title">
+                                    <h3> Blue Dress </h3>
+                                        <i class="fas fa-heart" ></i>
+                                    
+                                </div>
+                            </td>
+                            <td> <span class="price">79.99</span> DT </td>
+                            <td>            
+                                <input class="num" type="number" value="1" min="1">
+                            </td>
+                            <td><span class="full-price">79.99</span> DT</td>
+                        </tr>
+                    </tbody>
+                </table> 
+
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Total Price</td>
+                            <td><span id="total">162.00</span> DT</td>
+                        </tr>
+                        <tr></tr>
+                    </table>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+   <script src="main.js"></script>
+    
+</body>
+</html>

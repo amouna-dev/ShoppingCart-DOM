@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .navbar{
+     display: flex;
+     align-items: center;
+     padding: 10px;
+ }
+ nav {
+     flex: 1;
+     text-align: right;
+ }
+ nav ul {
+     display: inline-block;
+     list-style: none;
+     margin-right: 80px;
+ }
+ nav ul li {
+     display: inline-block;
+     margin-right: 40px;
+ }
+ a {
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: 400;
+     color: #555;
+ }
+ li a:hover, li .active {
+     color: #7a0266;
+     font-weight: 600;
+ }
+ .container {
+     max-width: 1300px;
+     margin: auto;
+     padding: 0 25px;
+ }
+ .row {
+     margin: 50px auto;
+ }
+ h1 {
+     text-align: center;
+     font-size: 40px;
+     color: purple;
+ }
+
+ /*cart items*/
+ .products {
+     margin: 80px auto;
+     max-width: 1000px;
+     padding: 0 25px;
+ }
+ .products h2{
+     margin: 20px 0;
+     color: darkgrey;
+ }
+ table {
+     width: 100%;
+     border-collapse: collapse;
+ }
+ .cart-info {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .cart-info img {
+     width: 100px;
+     height: 100px;
+ }
+
+ .cart-info a {
+     margin: 40px 15px;
+     width: 30px;
+     height: 30px;
+     padding: 5px;
+     color: #555;
+ }
+ .cart-info a:hover {
+     color: red;
+ }
+ th {
+     text-align: left;
+     padding: 5px;
+     color: white;
+     background: #b35abb;
+     font-weight: 400;
+ }
+ td {
+     padding: 10px 5px;
+ }
+ td input {
+     width: 40px;
+     height: 30px;
+     padding: 5px;
+ }
+ .total-price {
+     display: flex;
+     justify-content: flex-end;
+    padding: 10px 0 10px 20px;
+ }
+ .total-price table {
+     border-top: 3px solid #b35abb;
+     width: 100%;
+     max-width: 300px;
+ }
+ 
+ td:last-child {
+     text-align: right;
+ }
+ th:last-child {
+     text-align: right;
+ }
+
+  .title h3{ 
+     margin: 40px 20px;
+     color: #555;
+     float: left;
+ }
+.title .fas {
+  font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+  color : lightgray;
+  margin: 40px 20px;
+  float: right;
+}
+.icon {
+    color: lightgray;
+} 
+.title .fas:hover {
+    color: crimson;
+}
+.title ::after {
+    content: "";
+    clear: both;
+}
